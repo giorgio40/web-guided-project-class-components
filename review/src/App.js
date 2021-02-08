@@ -2,7 +2,8 @@ import React, { useState, Component } from "react";
 
 // class App extends React.Component {
 class App extends Component {
-  const render = () => {
+  // class properties instead of variable
+  render() {
     return (
       <div>
         <h1>Hello Warren</h1>
@@ -12,3 +13,7 @@ class App extends Component {
 }
 
 export default App;
+
+const newObj = {
+  someProperty: "hello",
+};
