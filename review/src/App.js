@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const App = () => {
+class App extends React.Component {
   return (
     <div>
       <h1>Hello Warren</h1>
