@@ -2,7 +2,7 @@ import React, { useState, Component } from "react";
 
 // class App extends React.Component {
 class App extends Component {
-  render() {
+  const render = () => {
     return (
       <div>
         <h1>Hello Warren</h1>
