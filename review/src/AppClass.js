@@ -27,7 +27,7 @@ class AppClass extends React.Component {
     // class version of hooks "setter" functions
     // Make a copy of the state
     this.setState({
-      name: "Allison",
+      name: this.state.name === "Warren" ? "Allison" : "Warren",
     });
   };
 
@@ -35,7 +35,9 @@ class AppClass extends React.Component {
     return (
       <div>
         <Person name={this.state.name} />
-        <button onClick={this.handleNameButtonClick}>MAKE IS ALLISON</button>
+        <button onClick={this.handleNameButtonClick}>
+          MAKE IS {this.state.name === "Warren" ? "Allison" : "Warren"}
+        </button>
       </div>
     );
   }
