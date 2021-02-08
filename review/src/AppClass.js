@@ -1,19 +1,16 @@
 import React from "react";
 
-class Person extends React.Component {
-  console.log(this.props);
-  render() {
-    return (
-      <div>
-        <h1>Hello {this.props.name}.</h1>
-        <p>
-          {this.props.name} is an unbelievable name. Stunning! Never change,{" "}
-          {this.props.name}.
-        </p>
-      </div>
-    );
-  }
-}
+const Person = (props) => {
+  return (
+    <div>
+      <h1>Hello {props.name}.</h1>
+      <p>
+        {props.name} is an unbelievable name. Stunning! Never change,{" "}
+        {props.name}.
+      </p>
+    </div>
+  );
+};
 
 class AppClass extends React.Component {
   constructor() {
