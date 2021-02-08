@@ -19,10 +19,14 @@ class AppClass extends React.Component {
     super();
     this.state = {
       name: "Warren",
+      count: 0,
+      reactIsAwesome: true,
     };
   }
 
   handleNameButtonClick = (e) => {
+    // class version of hooks "setter" functions
+    // Make a copy of the state
     this.setState({
       ...this.state,
       name: "Allison",
