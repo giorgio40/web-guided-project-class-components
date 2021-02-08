@@ -26,7 +26,6 @@ class AppClass extends React.Component {
     // class version of hooks "setter" functions
     // Make a copy of the state
     this.setState({
-      ...this.state,
       name: "Allison",
     });
   };
