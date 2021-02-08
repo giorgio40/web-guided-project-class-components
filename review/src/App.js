@@ -10,12 +10,12 @@ class App extends Component {
       allProperties: true,
     };
   }
-
+  name = "Warren";
   // class properties instead of variable
   render() {
     return (
       <div>
-        <h1>Hello {state.name}</h1>
+        <h1>Hello {this.name}</h1>
       </div>
     );
   }
