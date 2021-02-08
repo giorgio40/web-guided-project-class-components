@@ -10,12 +10,13 @@ class App extends Component {
       allProperties: true,
     };
   }
-  name = "Warren";
+
   // class properties instead of variable
   render() {
+    console.log(this.state);
     return (
       <div>
-        <h1>Hello {this.name}</h1>
+        <h1>Hello {this.state.name}</h1>
       </div>
     );
   }
