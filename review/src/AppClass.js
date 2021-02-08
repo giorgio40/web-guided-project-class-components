@@ -1,6 +1,7 @@
 import React from "react";
 
 class Person extends React.Component {
+  console.log(this.props);
   render() {
     return (
       <div>
