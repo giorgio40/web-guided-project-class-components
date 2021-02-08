@@ -12,23 +12,22 @@ class Person extends React.Component {
       </div>
     );
   }
-} 
+}
 
 class AppClass extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "Warren"
+      name: "Warren",
     };
   }
 
   handleNameButtonClick = (e) => {
     this.setState({
       ...this.state,
-      name: "Allison"
+      name: "Allison",
     });
   };
-
 
   render() {
     return (
