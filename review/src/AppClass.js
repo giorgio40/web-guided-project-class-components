@@ -13,6 +13,7 @@ const Person = (props) => {
 };
 
 class AppClass extends React.Component {
+  // cannot use hooks inside class components 😭
   constructor() {
     super();
     this.state = {
